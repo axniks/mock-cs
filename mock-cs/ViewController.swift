@@ -9,11 +9,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var maxScoreLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        scoreLabel.text = "-"
+        maxScoreLabel.text = "out of -"
+
+        ScoreStore.refreshScore { score in
+            DispatchQueue.main.async {
+                self.scoreLabel.text = String(format: "%d", score.score)
+                self.maxScoreLabel.text = String(format: "out of %d", score.maxScore)
+            }
+        }
     }
-
-
 }
 

@@ -64,6 +64,10 @@
                             <constraint firstItem="UnM-m7-LFz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gZ7-Fz-C0r"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="maxScoreLabel" destination="MTx-cp-v7A" id="a7i-Cs-zA1"/>
+                        <outlet property="scoreLabel" destination="rnW-HU-8WX" id="om7-RY-Pns"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

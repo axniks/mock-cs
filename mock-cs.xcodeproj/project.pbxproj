@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		773D4B78270F832300007EEA /* ScoreStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773D4B77270F832300007EEA /* ScoreStore.swift */; };
 		77C53DFE270C987100D11975 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C53DFD270C987100D11975 /* AppDelegate.swift */; };
 		77C53E00270C987100D11975 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C53DFF270C987100D11975 /* SceneDelegate.swift */; };
 		77C53E02270C987100D11975 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C53E01270C987100D11975 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		773D4B77270F832300007EEA /* ScoreStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreStore.swift; sourceTree = "<group>"; };
 		77C53DFA270C987100D11975 /* mock-cs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mock-cs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C53DFD270C987100D11975 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77C53DFF270C987100D11975 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				77C53DFD270C987100D11975 /* AppDelegate.swift */,
 				77C53DFF270C987100D11975 /* SceneDelegate.swift */,
 				77C53E01270C987100D11975 /* ViewController.swift */,
+				773D4B77270F832300007EEA /* ScoreStore.swift */,
 				77C53E03270C987100D11975 /* Main.storyboard */,
 				77C53E06270C987300D11975 /* Assets.xcassets */,
 				77C53E08270C987300D11975 /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				773D4B78270F832300007EEA /* ScoreStore.swift in Sources */,
 				77C53E02270C987100D11975 /* ViewController.swift in Sources */,
 				77C53DFE270C987100D11975 /* AppDelegate.swift in Sources */,
 				77C53E00270C987100D11975 /* SceneDelegate.swift in Sources */,
