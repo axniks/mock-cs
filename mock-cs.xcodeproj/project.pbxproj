@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		773D4B78270F832300007EEA /* ScoreStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773D4B77270F832300007EEA /* ScoreStore.swift */; };
+		773D4B78270F832300007EEA /* CodeTestStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773D4B77270F832300007EEA /* CodeTestStore.swift */; };
 		77C53DFE270C987100D11975 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C53DFD270C987100D11975 /* AppDelegate.swift */; };
 		77C53E00270C987100D11975 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C53DFF270C987100D11975 /* SceneDelegate.swift */; };
 		77C53E02270C987100D11975 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C53E01270C987100D11975 /* ViewController.swift */; };
 		77C53E05270C987100D11975 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77C53E03270C987100D11975 /* Main.storyboard */; };
 		77C53E07270C987300D11975 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77C53E06270C987300D11975 /* Assets.xcassets */; };
 		77C53E0A270C987300D11975 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77C53E08270C987300D11975 /* LaunchScreen.storyboard */; };
-		77C53E15270C987300D11975 /* mock_csTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C53E14270C987300D11975 /* mock_csTests.swift */; };
+		77C53E15270C987300D11975 /* ScoreStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C53E14270C987300D11975 /* ScoreStoreTests.swift */; };
 		77C53E1F270C987300D11975 /* mock_csUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C53E1E270C987300D11975 /* mock_csUITests.swift */; };
 		77C53E21270C987300D11975 /* mock_csUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C53E20270C987300D11975 /* mock_csUITestsLaunchTests.swift */; };
+		77E7F12F271473D900D4A984 /* ScoreStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E7F12E271473D900D4A984 /* ScoreStore.swift */; };
+		77E7F1312714746300D4A984 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E7F1302714746300D4A984 /* MockURLProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		773D4B77270F832300007EEA /* ScoreStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreStore.swift; sourceTree = "<group>"; };
+		773D4B77270F832300007EEA /* CodeTestStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTestStore.swift; sourceTree = "<group>"; };
 		77C53DFA270C987100D11975 /* mock-cs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mock-cs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C53DFD270C987100D11975 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77C53DFF270C987100D11975 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,10 +49,12 @@
 		77C53E09270C987300D11975 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77C53E0B270C987300D11975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77C53E10270C987300D11975 /* mock-csTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mock-csTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		77C53E14270C987300D11975 /* mock_csTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mock_csTests.swift; sourceTree = "<group>"; };
+		77C53E14270C987300D11975 /* ScoreStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreStoreTests.swift; sourceTree = "<group>"; };
 		77C53E1A270C987300D11975 /* mock-csUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mock-csUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C53E1E270C987300D11975 /* mock_csUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mock_csUITests.swift; sourceTree = "<group>"; };
 		77C53E20270C987300D11975 /* mock_csUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mock_csUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		77E7F12E271473D900D4A984 /* ScoreStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreStore.swift; sourceTree = "<group>"; };
+		77E7F1302714746300D4A984 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +107,13 @@
 			children = (
 				77C53DFD270C987100D11975 /* AppDelegate.swift */,
 				77C53DFF270C987100D11975 /* SceneDelegate.swift */,
-				77C53E01270C987100D11975 /* ViewController.swift */,
-				773D4B77270F832300007EEA /* ScoreStore.swift */,
-				77C53E03270C987100D11975 /* Main.storyboard */,
 				77C53E06270C987300D11975 /* Assets.xcassets */,
 				77C53E08270C987300D11975 /* LaunchScreen.storyboard */,
 				77C53E0B270C987300D11975 /* Info.plist */,
+				77C53E01270C987100D11975 /* ViewController.swift */,
+				773D4B77270F832300007EEA /* CodeTestStore.swift */,
+				77E7F12E271473D900D4A984 /* ScoreStore.swift */,
+				77C53E03270C987100D11975 /* Main.storyboard */,
 			);
 			path = "mock-cs";
 			sourceTree = "<group>";
@@ -116,7 +121,8 @@
 		77C53E13270C987300D11975 /* mock-csTests */ = {
 			isa = PBXGroup;
 			children = (
-				77C53E14270C987300D11975 /* mock_csTests.swift */,
+				77C53E14270C987300D11975 /* ScoreStoreTests.swift */,
+				77E7F1302714746300D4A984 /* MockURLProtocol.swift */,
 			);
 			path = "mock-csTests";
 			sourceTree = "<group>";
@@ -261,8 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				773D4B78270F832300007EEA /* ScoreStore.swift in Sources */,
+				773D4B78270F832300007EEA /* CodeTestStore.swift in Sources */,
 				77C53E02270C987100D11975 /* ViewController.swift in Sources */,
+				77E7F12F271473D900D4A984 /* ScoreStore.swift in Sources */,
 				77C53DFE270C987100D11975 /* AppDelegate.swift in Sources */,
 				77C53E00270C987100D11975 /* SceneDelegate.swift in Sources */,
 			);
@@ -272,7 +279,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77C53E15270C987300D11975 /* mock_csTests.swift in Sources */,
+				77C53E15270C987300D11975 /* ScoreStoreTests.swift in Sources */,
+				77E7F1312714746300D4A984 /* MockURLProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

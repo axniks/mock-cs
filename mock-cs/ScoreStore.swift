@@ -2,42 +2,43 @@
 //  ScoreStore.swift
 //  mock-cs
 //
-//  Created by Axel Niklasson on 07/10/2021.
+//  Created by Axel Niklasson on 11/10/2021.
 //
 
 import Foundation
 
-struct Score {
+/// type used to decode mock credit score json response
+struct CreditReportInfo: Decodable {
     let score: Int
-    let maxScore: Int
+    let maxScoreValue: Int
 }
 
-struct ScoreStore {
-    static func refreshScore(completion:@escaping ((_ score: Score) -> Void)) {
-        let session = URLSession.shared
+/// type used to decode mock credit score json response
+struct Score: Decodable {
+    let creditReportInfo: CreditReportInfo
+}
+
+/// A class encapsulating the specific endpoint and data structure for the mock API
+/// credit score data retrieval
+class ScoreStore: CodeTestStore {
+
+    /// Fetches score and maxScore from mock API endpoint and decode according to Score type
+    ///
+    /// - Parameters:
+    ///     - completion:   a block on which you want the Result containing score and maxScore returned
+    func fetchScore(completion: @escaping (_ result: Result<(score: Int, maxScore: Int), Error>) -> Void) {
+
+        /// API endpoint
         let url = URL(string: "https://5lfoiyb0b3.execute-api.us-west-2.amazonaws.com/prod/mockcredit/values")!
 
-        let task = session.dataTask(with: url, completionHandler: { data, response, error in
-
-            guard let response = response as? HTTPURLResponse, (200...299).contains(response.statusCode) else {
-                print("Failed to retrieve a response from server")
-                return
+        /// retrieve JSON according to Score type and return score and maxScore on success
+        fetch(Score.self, from: url) { result in
+            switch result {
+            case .success(let score):
+                completion(Result.success((score.creditReportInfo.score, score.creditReportInfo.maxScoreValue)))
+            case .failure(let error):
+                completion(Result.failure(error))
             }
-
-            do {
-                let json = try JSONSerialization.jsonObject(with: data!, options: [])
-                if let jsonData = json as? [String: Any],
-                   let reportInfo = jsonData["creditReportInfo"] as? [String: Any],
-                   let score = reportInfo["score"] as? Int,
-                   let maxScore = reportInfo["maxScoreValue"] as? Int {
-                    completion(Score(score: score, maxScore: maxScore))
-                } else {
-                    print("Failed to parse json response: ", json)
-                }
-            } catch {
-                print("Failed JSON serialization: \(error.localizedDescription)")
-            }
-        })
-        task.resume()
+        }
     }
 }
