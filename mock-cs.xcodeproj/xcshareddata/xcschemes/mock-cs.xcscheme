@@ -37,6 +37,21 @@
                BlueprintName = "mock-csTests"
                ReferencedContainer = "container:mock-cs.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "ScoreStoreTests">
+               </Test>
+            </SkippedTests>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "77C53E19270C987300D11975"
+               BuildableName = "mock-csUITests.xctest"
+               BlueprintName = "mock-csUITests"
+               ReferencedContainer = "container:mock-cs.xcodeproj">
+            </BuildableReference>
          </TestableReference>
       </Testables>
    </TestAction>

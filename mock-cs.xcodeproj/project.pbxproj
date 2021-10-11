@@ -15,8 +15,7 @@
 		77C53E07270C987300D11975 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77C53E06270C987300D11975 /* Assets.xcassets */; };
 		77C53E0A270C987300D11975 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77C53E08270C987300D11975 /* LaunchScreen.storyboard */; };
 		77C53E15270C987300D11975 /* ScoreStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C53E14270C987300D11975 /* ScoreStoreTests.swift */; };
-		77C53E1F270C987300D11975 /* mock_csUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C53E1E270C987300D11975 /* mock_csUITests.swift */; };
-		77C53E21270C987300D11975 /* mock_csUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C53E20270C987300D11975 /* mock_csUITestsLaunchTests.swift */; };
+		77C53E1F270C987300D11975 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C53E1E270C987300D11975 /* UITests.swift */; };
 		77E7F12F271473D900D4A984 /* ScoreStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E7F12E271473D900D4A984 /* ScoreStore.swift */; };
 		77E7F1312714746300D4A984 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E7F1302714746300D4A984 /* MockURLProtocol.swift */; };
 /* End PBXBuildFile section */
@@ -51,8 +50,7 @@
 		77C53E10270C987300D11975 /* mock-csTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mock-csTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C53E14270C987300D11975 /* ScoreStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreStoreTests.swift; sourceTree = "<group>"; };
 		77C53E1A270C987300D11975 /* mock-csUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mock-csUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		77C53E1E270C987300D11975 /* mock_csUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mock_csUITests.swift; sourceTree = "<group>"; };
-		77C53E20270C987300D11975 /* mock_csUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mock_csUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		77C53E1E270C987300D11975 /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
 		77E7F12E271473D900D4A984 /* ScoreStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreStore.swift; sourceTree = "<group>"; };
 		77E7F1302714746300D4A984 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,8 +128,7 @@
 		77C53E1D270C987300D11975 /* mock-csUITests */ = {
 			isa = PBXGroup;
 			children = (
-				77C53E1E270C987300D11975 /* mock_csUITests.swift */,
-				77C53E20270C987300D11975 /* mock_csUITestsLaunchTests.swift */,
+				77C53E1E270C987300D11975 /* UITests.swift */,
 			);
 			path = "mock-csUITests";
 			sourceTree = "<group>";
@@ -288,8 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77C53E21270C987300D11975 /* mock_csUITestsLaunchTests.swift in Sources */,
-				77C53E1F270C987300D11975 /* mock_csUITests.swift in Sources */,
+				77C53E1F270C987300D11975 /* UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
