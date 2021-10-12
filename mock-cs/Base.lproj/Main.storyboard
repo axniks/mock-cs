@@ -15,52 +15,80 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="756"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UnM-m7-LFz" userLabel="Score View">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UnM-m7-LFz" userLabel="Score View" customClass="ScoreView" customModule="mock_cs" customModuleProvider="target">
                                 <rect key="frame" x="58.666666666666657" y="224.66666666666669" width="273" height="273"/>
                                 <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oval" translatesAutoresizingMaskIntoConstraints="NO" id="Sg8-hv-Nkr" userLabel="Circle">
+                                        <rect key="frame" x="0.0" y="0.0" width="273" height="273"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="CircleImage"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iWJ-WU-rCG" userLabel="Progress View">
+                                        <rect key="frame" x="0.0" y="0.0" width="273" height="273"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your credit score is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h40-ep-Xsb">
                                         <rect key="frame" x="63.333333333333343" y="75" width="146" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="327" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnW-HU-8WX">
-                                        <rect key="frame" x="83" y="97" width="107" height="79"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnW-HU-8WX">
+                                        <rect key="frame" x="122.33333333333333" y="97" width="28.333333333333329" height="79"/>
                                         <accessibility key="accessibilityConfiguration" identifier="ScoreLabel"/>
                                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="66"/>
                                         <color key="textColor" red="0.97254901960784312" green="0.88235294117647056" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="out of 700" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTx-cp-v7A">
-                                        <rect key="frame" x="97" y="176" width="79" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="out of -" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTx-cp-v7A">
+                                        <rect key="frame" x="108.00000000000001" y="176" width="56.666666666666671" height="21"/>
                                         <accessibility key="accessibilityConfiguration" identifier="MaxScoreLabel"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oval" translatesAutoresizingMaskIntoConstraints="NO" id="Sg8-hv-Nkr">
-                                        <rect key="frame" x="0.0" y="0.0" width="273" height="273"/>
-                                        <accessibility key="accessibilityConfiguration" identifier="CircleImage"/>
-                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="rnW-HU-8WX" firstAttribute="centerX" secondItem="h40-ep-Xsb" secondAttribute="centerX" id="ClR-kM-BWK"/>
                                     <constraint firstItem="MTx-cp-v7A" firstAttribute="centerX" secondItem="rnW-HU-8WX" secondAttribute="centerX" id="FJs-65-Psu"/>
+                                    <constraint firstItem="iWJ-WU-rCG" firstAttribute="width" secondItem="UnM-m7-LFz" secondAttribute="width" id="LZz-55-wU7"/>
                                     <constraint firstItem="Sg8-hv-Nkr" firstAttribute="centerX" secondItem="UnM-m7-LFz" secondAttribute="centerX" id="MgH-5d-CyB"/>
                                     <constraint firstAttribute="width" secondItem="UnM-m7-LFz" secondAttribute="height" multiplier="1:1" id="Mq8-Ga-Dj9"/>
                                     <constraint firstItem="rnW-HU-8WX" firstAttribute="top" secondItem="h40-ep-Xsb" secondAttribute="bottom" constant="1" id="Ocy-Wp-lNX"/>
                                     <constraint firstItem="Sg8-hv-Nkr" firstAttribute="height" secondItem="UnM-m7-LFz" secondAttribute="height" id="SRq-aT-fNy"/>
+                                    <constraint firstItem="iWJ-WU-rCG" firstAttribute="height" secondItem="UnM-m7-LFz" secondAttribute="height" id="X1V-tf-Kml"/>
+                                    <constraint firstItem="iWJ-WU-rCG" firstAttribute="centerY" secondItem="UnM-m7-LFz" secondAttribute="centerY" id="aaR-bm-wHf"/>
+                                    <constraint firstItem="iWJ-WU-rCG" firstAttribute="centerX" secondItem="UnM-m7-LFz" secondAttribute="centerX" id="cDR-af-OXi"/>
                                     <constraint firstItem="Sg8-hv-Nkr" firstAttribute="centerY" secondItem="UnM-m7-LFz" secondAttribute="centerY" id="i71-ui-id8"/>
                                     <constraint firstItem="MTx-cp-v7A" firstAttribute="top" secondItem="rnW-HU-8WX" secondAttribute="bottom" id="k43-0r-5ZN"/>
                                     <constraint firstItem="Sg8-hv-Nkr" firstAttribute="width" secondItem="UnM-m7-LFz" secondAttribute="width" id="pW0-cX-a06"/>
                                     <constraint firstItem="rnW-HU-8WX" firstAttribute="centerX" secondItem="UnM-m7-LFz" secondAttribute="centerX" id="xef-Qv-X5U"/>
                                     <constraint firstItem="rnW-HU-8WX" firstAttribute="centerY" secondItem="UnM-m7-LFz" secondAttribute="centerY" id="ymz-Mx-6ge"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="score">
+                                        <integer key="value" value="541"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxScore">
+                                        <integer key="value" value="700"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scoreArcWidth">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="scoreArcColor">
+                                        <color key="value" red="0.97254901959999995" green="0.88235294119999996" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="maxScoreLabel" destination="MTx-cp-v7A" id="pcv-dH-CAB"/>
+                                    <outlet property="progressView" destination="iWJ-WU-rCG" id="mRf-IP-Gmh"/>
+                                    <outlet property="scoreLabel" destination="rnW-HU-8WX" id="Lkq-7C-phI"/>
+                                </connections>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="UnM-m7-LFz" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="B68-7y-dyH"/>
                             <constraint firstItem="UnM-m7-LFz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="cdX-FJ-PVi"/>
@@ -69,8 +97,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Dashboard" id="51C-8K-2Ck"/>
                     <connections>
-                        <outlet property="maxScoreLabel" destination="MTx-cp-v7A" id="a7i-Cs-zA1"/>
-                        <outlet property="scoreLabel" destination="rnW-HU-8WX" id="om7-RY-Pns"/>
+                        <outlet property="scoreView" destination="UnM-m7-LFz" id="1uS-vB-3Xb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

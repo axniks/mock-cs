@@ -9,18 +9,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var scoreLabel: UILabel!
-    @IBOutlet weak var maxScoreLabel: UILabel!
+    @IBOutlet weak var scoreView: ScoreView!
 
     /// provides mock credit score data to present to the user
     let scoreStore = ScoreStore()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        /// put up some placeholders while fetching credit score
-        scoreLabel.text = "-"
-        maxScoreLabel.text = "out of -"
 
         /// fetch credit score
         scoreStore.fetchScore { result in
@@ -29,8 +25,8 @@ class ViewController: UIViewController {
                 /// head back on main thread before updating view
                 DispatchQueue.main.async {
                     /// update credit score info
-                    self.scoreLabel.text = "\(score.score)"
-                    self.maxScoreLabel.text = "out of \(score.maxScore)"
+                    /// put up some placeholders while fetching credit score
+                    self.scoreView.score = (score.score, score.maxScore)
                 }
             case .failure(let error):
                     /// head back on main thread before updating view
