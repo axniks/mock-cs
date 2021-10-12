@@ -1,19 +1,15 @@
 # Code test
 
-The task is to build an iOS application that will make a network request and display a credit score to the user. A request can be made to the following endpoint. It will respond with a JSON payload providing credit score information for the user: https://5lfoiyb0b3.execute-api.us-west-2.amazonaws.com/prod/mockcredit/values
+This iOS application makes a network request and displays a mock credit score to the user, including a circular progress indicator
 
-## Criteria and Tips
-We do not expect a perfect solution, but we do expect your solution to be **production-grade**. Here are some criteria and tips:
-* The project should contain only what is needed.
-* The code should be well structured and easy to follow.
-* The solution should be well tested with automation tests.
-* You should consider error cases.
-* You should consider other form factors.
-* You can make any technical decisions that you think are appropriate provided you’re willing to explain them.
-* Your user interfaces should be built using **UIKit**.  Although we are adopting SwiftUI, most of our app is still written using UIKit.
-* Your solution should be written entirely in **Swift** – we do not use Objective C.
+## Considerations
+* The project is built on Xcode 13 and written in Swift using Foundation and UIKit, and Interface Builder
+* File structure and content is mostly left as in the project template, e.g. re AppDelegate
+* The main journey (minus the progress indicator) is covered by UI automation
+* The JSON parsing is reasonably covered by unit tests
 
-## Bonus Points
-For bonus points, consider some of the following extras:
-* Add a circular progress indicator inside of the circle that animates as it appears, rather like the donut in the ClearScore app.
-* Add a detail page that opens when the donut is tapped by the user, displaying additional information from the endpoint.
+Additional time would have been spent on:
+* Considering other form factors, scaling labels and views with the UI
+* Increased test coverage, had I added the additional details screen
+* Exploring using Combine over completionhandlers for the async requests
+* Persisting the score between launches
